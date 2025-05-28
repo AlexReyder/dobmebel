@@ -1,0 +1,142 @@
+.Section{
+	padding: 6rem 0;
+}
+
+.Heading{
+	font-size: 3.6rem;
+	font-weight: 400;
+	line-height: 1.1;
+	text-align: center;
+	margin-bottom: 4rem;
+	
+	&__bold{
+		font-weight: 600;
+	}
+}
+
+.Subheading{
+	font-size: 2rem;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+
+.Card{
+	min-width: 280px;
+	max-width: 440px;
+	padding: 1.5rem;
+	border-right: 1px solid var(--c-g);
+
+	&__Author{
+		font-style: normal;
+		font-size: 1.6rem;
+		font-weight: 500;
+	}
+
+	&__Avatar{
+			border-radius: 50%;
+			width: 42px;
+			height: 42px;
+			object-fit: cover;
+
+			&__Wrapper{
+				display: flex;
+				align-items: center;
+				gap: 1.5rem;
+			}
+	}
+
+	&__Quote{
+		font-size: 1.8rem;
+		line-height: 1.6;
+		text-align: left;
+		margin-bottom: 2rem;
+	}
+
+
+	&__Icon{
+		color: var(--c-g);
+		width: 64px;
+		height: 64px;
+		margin-bottom: 4rem;
+	}
+
+	&__Link{
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		color: var(--c-g);
+		margin-top: 1rem;
+	}
+
+}
+
+.Embla{
+	overflow: hidden;
+	margin: 0 7rem;
+}
+
+.Embla__Container{
+	display: flex;
+	gap: 4rem;
+}
+
+.Embla__Slide{
+	flex: 0 0 100%;
+	min-width: 0;
+}
+
+.Tabs{
+	position: relative;
+}
+
+.TabsList{
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	justify-content: center;
+	margin: 0 auto;
+	margin-bottom: 8rem;
+}
+
+.TabsTrigger{
+	display: flex;
+	width: 150px;
+	height: 35px;
+	border: 2px solid var(--c-g);
+	border-radius: var(--br-sm);
+	padding: 1rem;
+	transition: all 0.3s;
+	&[data-state="active"]{
+		border-color: var(--c-p);
+	}
+}
+
+.TabsContent{
+	transition: all 0.3s;
+}
+
+.TabsIcon{
+	width: 70%;
+	height: auto;
+}
+
+.EmblaDots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	margin-top: 6rem;
+}
+
+.EmblaDot{
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	border: 2px solid var(--c-g);
+	transition: border-color 0.3s ease-out;
+	&__Selected{
+		border-color: var(--c-p);
+	}
+}
