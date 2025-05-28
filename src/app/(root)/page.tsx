@@ -9,11 +9,11 @@ import { QuizBlock } from '@/shared/blocks/QuizBlock/QuizBlock'
 import { TestimonialsBlock } from '@/shared/blocks/TestimonialsBlock/TestimonialsBlock'
 
 export default async function Page() {
-	const rawData = await fetch(`${process.env.SITE_DOMAIN}/api/getData`)
-	const data = await rawData.json()
+	// const rawData = await fetch(`${process.env.SITE_DOMAIN}/api/getData`)
+	// const data = await rawData.json()
 	return (
 		<main>
-			<QuizBlock/>
+			{/* <QuizBlock/>
 			<CasesBlock data={data.cases} />
 			<MakeKindBlock/>
 			<AboutBlock/>
@@ -21,7 +21,7 @@ export default async function Page() {
 			<TestimonialsBlock data={data.testimonials}/>
 			<CallMeasurerBlock/>
 			<ContactsBlock/>
-			<FooterBlock/>
+			<FooterBlock/> */}
 		</main>
 	)
 }
