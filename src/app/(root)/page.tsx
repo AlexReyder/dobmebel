@@ -9,7 +9,7 @@ import { QuizBlock } from '@/shared/blocks/QuizBlock/QuizBlock'
 import { TestimonialsBlock } from '@/shared/blocks/TestimonialsBlock/TestimonialsBlock'
 
 export default async function Page() {
-	const rawData = await fetch(`${process.env.SITE_DOMAIN}/api/`)
+	const rawData = await fetch(`${process.env.SITE_DOMAIN}/api/getData`)
 	const data = await rawData.json()
 	return (
 		<main>
